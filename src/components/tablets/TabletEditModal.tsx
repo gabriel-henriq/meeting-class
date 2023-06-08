@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form, Input, Modal } from 'antd';
-import {Tablet} from "../../data/tablet";
+import {Tablet} from "../../models/tablet";
 
 interface EditTabletModalProps {
     open: boolean

@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react';
 import {Button, List, message, Popconfirm} from 'antd';
 import {AppContext} from "../../pages/App.tsx";
 import {DeleteOutlined, EditOutlined} from "@ant-design/icons";
-import {Tablet} from "../../data/tablet";
+import {Tablet} from "../../models/tablet";
 import EditTabletModal from './TabletEditModal.tsx';
 
 const TabletList: React.FC = () => {

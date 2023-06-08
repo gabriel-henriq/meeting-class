@@ -2,11 +2,11 @@ import React, {createContext, useState} from 'react';
 import {RouterProvider} from 'react-router-dom';
 import routes from "../routes";
 
-import {Professor, ProfessorImpl} from "../data/professor.ts";
-import {Meeting} from "../data/meeting.ts";
-import {Tablet} from "../data/tablet.ts";
-import {Classroom} from "../data/classroom.ts";
-import {Student} from "../data/student.ts";
+import {Professor, ProfessorImpl} from "../models/professor.ts";
+import {Meeting} from "../models/meeting.ts";
+import {Tablet, TabletImpl} from "../models/tablet.ts";
+import {Classroom, ClassroomImpl} from "../models/classroom.ts";
+import {Student} from "../models/student.ts";
 
 export interface AppContextProps {
     professors: Professor[];
@@ -25,8 +25,8 @@ export const AppContext = createContext<AppContextProps>({} as AppContextProps);
 
 const App: React.FC = () => {
     const [professors, setProfessors] = useState<Professor[]>([new ProfessorImpl("Jhon Doe"), new ProfessorImpl("Gabriel Doe"), new ProfessorImpl("Lucas Silva"), new ProfessorImpl("Daniel Pirez")]);
-    const [tablets, setTablets] = useState<Tablet[]>([]);
-    const [classrooms, setClassrooms] = useState<Classroom[]>([]);
+    const [tablets, setTablets] = useState<Tablet[]>([new TabletImpl("TAB1"), new TabletImpl("TAB2"), new TabletImpl("TAB3")]);
+    const [classrooms, setClassrooms] = useState<Classroom[]>([new ClassroomImpl('Sala do Fundo', '#1677FF'), new ClassroomImpl('Sala do Armario', '#8B16FF'), new ClassroomImpl('Sala do Mario', '#FF1694')]);
     const [meetings, setMeetings] = useState<Meeting[]>([]);
     const [students, setStudents] = useState<Student[]>([]);
 

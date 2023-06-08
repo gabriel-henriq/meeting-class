@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form, Input, Modal } from 'antd';
-import {Professor} from "../../data/professor";
+import {Professor} from "../../models/professor";
 
 interface EditProfessorModalProps {
     open: boolean

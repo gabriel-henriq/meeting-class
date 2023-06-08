@@ -4,7 +4,7 @@ import {Button, Col, ColorPicker, Drawer, Form, Input, Row, Space} from 'antd';
 import type { Color } from 'antd/es/color-picker';
 
 import { AppContext } from "../../pages/App";
-import { Classroom, ClassroomImpl } from "../../data/classroom";
+import { Classroom, ClassroomImpl } from "../../models/classroom";
 
 const ClassroomCreate: React.FC = () => {
     const { classrooms, setClassrooms } = useContext(AppContext);

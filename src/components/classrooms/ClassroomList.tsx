@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react';
 import {Avatar, Button, List, message, Popconfirm} from 'antd';
 import {AppContext} from "../../pages/App.tsx";
 import {DeleteOutlined, EditOutlined} from "@ant-design/icons";
-import {Classroom} from "../../data/classroom.ts";
+import {Classroom} from "../../models/classroom.ts";
 import ClassroomEditModal from './ClassroomEditModal.tsx';
 
 const ClassroomList: React.FC = () => {

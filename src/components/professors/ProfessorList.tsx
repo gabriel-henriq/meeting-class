@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react';
 import {Button, List, message, Popconfirm} from 'antd';
 import {AppContext} from "../../pages/App.tsx";
 import {DeleteOutlined, EditOutlined} from "@ant-design/icons";
-import {Professor} from "../../data/professor";
+import {Professor} from "../../models/professor";
 import EditProfessorModal from './ProfessorEditModal';
 
 const ProfessorList: React.FC = () => {

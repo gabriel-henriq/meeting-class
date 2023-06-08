@@ -3,7 +3,7 @@ import { PlusOutlined } from '@ant-design/icons';
 import { Button, Col, Drawer, Form, Input, Row, Space } from 'antd';
 
 import {AppContext} from "../../pages/App.tsx";
-import {Professor, ProfessorImpl} from "../../data/professor.ts";
+import {Professor, ProfessorImpl} from "../../models/professor.ts";
 
 const ProfessorCreate: React.FC = () => {
     const { professors, setProfessors } = useContext(AppContext);

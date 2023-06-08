@@ -3,7 +3,7 @@ import { PlusOutlined } from '@ant-design/icons';
 import { Button, Col, Drawer, Form, Input, Row, Space } from 'antd';
 
 import {AppContext} from "../../pages/App.tsx";
-import {Tablet, TabletImpl} from "../../data/tablet.ts";
+import {Tablet, TabletImpl} from "../../models/tablet.ts";
 
 const TabletCreate: React.FC = () => {
     const { tablets, setTablets } = useContext(AppContext);

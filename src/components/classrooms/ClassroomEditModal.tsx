@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Col, ColorPicker, Form, Input, Modal, Row} from 'antd';
-import {Classroom} from "../../data/classroom.ts";
+import {Classroom} from "../../models/classroom.ts";
 import {Color} from "antd/es/color-picker";
 
 interface ClassroomEditModalProps {
