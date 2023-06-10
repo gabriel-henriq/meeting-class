@@ -4,13 +4,13 @@ import {Classroom} from "./classroom.ts";
 import {Student} from "./student.ts";
 import {Dayjs} from "dayjs";
 
+export type DayOfWeek = 'Seg' | 'Ter' | 'Qua' | 'Qui' | 'Sex' | 'Sab';
+
 export interface Meeting {
-    id: string;
-    startTime: Dayjs;
-    endTime: Dayjs;
+    schedule: [Dayjs, Dayjs]
     professor: Professor;
     tablet?: Tablet;
     classroom: Classroom;
     students: Student[];
-    observation: string;
+    observation?: string;
 }
